@@ -11,10 +11,7 @@ public class passingMarks {
             int [] arr = new int [N];
             for(int i=0;i<N;i++)    arr[i] = scnr.nextInt();
             Arrays.sort(arr);
-            if(N == P)
-            System.out.println(arr[0]-1);
-            else
-            System.out.println(arr[arr.length-P]-1);
+            System.out.println((N == P) ? (arr[0]-1) : (arr[arr.length-P]-1));
         }
     }
 }
